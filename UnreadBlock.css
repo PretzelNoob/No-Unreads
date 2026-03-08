@@ -1,3 +1,5 @@
+/* Main */
+
 /* 1st Channel */
 li:has([aria-expanded="false"]) + li:has([class*="unread"]):not([class*="selected"]),
 
