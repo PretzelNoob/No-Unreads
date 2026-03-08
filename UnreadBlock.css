@@ -1,18 +1,27 @@
-/* 1. Target the Category Header LI */
-li[class*="containerDefault"]:has([aria-expanded="false"]) {
-  /* 2. Look at all siblings (~) that follow it */
-  & ~ li[class*="containerDefault"] {
-    /* 3. If the sibling is a channel AND is unread... */
-    &:has([class*="unread"]) {
-      /* 4. AND it is NOT selected (the one you are currently in) */
-      &:not([class*="selected"]) {
-        /* 5. STOP logic: Only hide if there isn't an OPEN category between them */
-        &:not(li:has([aria-expanded="true"]) ~ *) {
-           display: none !important;
-        }
-      }
-    }
-  }
+/* 1st Channel */
+li:has([aria-expanded="false"]) + li:has([class*="unread"]):not([class*="selected"]),
+
+/* 2nd - 50th Channel */
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]),
+
+li:has([aria-expanded="false"]) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:not(:has([aria-expanded])) + li:has([class*="unread"]):not([class*="selected"]) {
+    display: none !important;
 }
 
 /* Hide Dot Next to Unread Channels */
