@@ -1,0 +1,80 @@
+li:has([aria-expanded="false"]) + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]),
+li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li:has([class*="unread"]):not([class*="selected"]) {display: none !important;}
+
+/* Hide Dot Next to Unread Channels */
+
+.unread__2ea32 {
+    display: none;
+}
+
+/* Hide Popup Thing (eg. "NEW UNREADS") */
+
+.bar__7aaec.emptyBar__7aaec {
+    display: none;
+}
+
+/* Remove "New" Divider */
+
+.divider__5126c.hasContent__5126c.divider__908e2.isUnread__908e2.hasContent__908e2 {
+    display: none;
+}
+
+/* Remove "NEW" Icon On the Sidebar */
+
+.unreadMentionsIndicatorBottom_ef3116.unreadMentionsFixedFooter_ef3116 {
+    display: none;
+}
+
+/* Keep Icon Colors The Same */
+
+.iconContainer__2ea32 > svg[role="img"] {
+    color: #988E79;
+}
