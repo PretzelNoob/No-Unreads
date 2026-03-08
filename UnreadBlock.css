@@ -1,19 +1,16 @@
-/* 1. Target any channel LI that is unread and not selected */
-li[class*="containerDefault"]:has([class*="unread"]):not([class*="selected"]) {
-  
-  /* 2. Only hide it if it follows a COLLAPSED category header */
-  /* We check up to 50 siblings deep (Discord's max) */
-  &:is(
-    li:has([aria-expanded="false"]) + *,
-    li:has([aria-expanded="false"]) + * + *,
-    li:has([aria-expanded="false"]) + * + * + *,
-    li:has([aria-expanded="false"]) + * + * + * + *,
-    li:has([aria-expanded="false"]) + * + * + * + * + *,
-    /* ... shortened for readability, but use the full 50-chain below ... */
-    li:has([aria-expanded="false"]) + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + * + *
-  ) {
-    display: none !important;
-  }
+/* 1. Reset: Show all unreads by default */
+li[class*="containerDefault"] {
+    display: list-item !important;
+}
+
+/* 2. The Logic: If a category header is collapsed... */
+/* ...Target the siblings that follow it */
+li:has(div[aria-expanded="false"]) ~ li:has([class*="unread"]):not(:has([class*="selected"])) {
+    /* 3. Check if there is an OPEN category between the collapsed one and the channel */
+    /* This is the "Stop" logic to prevent leaking to the next folder */
+    &:not(li:has(div[aria-expanded="true"]) ~ li) {
+        display: none !important;
+    }
 }
 
 /* Hide Dot Next to Unread Channels */
