@@ -1,16 +1,18 @@
-/* 1. Reset: Show all unreads by default */
-li[class*="containerDefault"] {
-    display: list-item !important;
-}
-
-/* 2. The Logic: If a category header is collapsed... */
-/* ...Target the siblings that follow it */
-li:has(div[aria-expanded="false"]) ~ li:has([class*="unread"]):not(:has([class*="selected"])) {
-    /* 3. Check if there is an OPEN category between the collapsed one and the channel */
-    /* This is the "Stop" logic to prevent leaking to the next folder */
-    &:not(li:has(div[aria-expanded="true"]) ~ li) {
-        display: none !important;
+/* 1. Target the Category Header LI */
+li[class*="containerDefault"]:has([aria-expanded="false"]) {
+  /* 2. Look at all siblings (~) that follow it */
+  & ~ li[class*="containerDefault"] {
+    /* 3. If the sibling is a channel AND is unread... */
+    &:has([class*="unread"]) {
+      /* 4. AND it is NOT selected (the one you are currently in) */
+      &:not([class*="selected"]) {
+        /* 5. STOP logic: Only hide if there isn't an OPEN category between them */
+        &:not(li:has([aria-expanded="true"]) ~ *) {
+           display: none !important;
+        }
+      }
     }
+  }
 }
 
 /* Hide Dot Next to Unread Channels */
