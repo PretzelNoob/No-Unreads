@@ -75,6 +75,6 @@ li:has([aria-expanded="false"]) + li + li + li + li + li + li + li + li + li + l
 
 /* Keep Icon Colors The Same */
 
-.iconContainer__2ea32 > svg[role="img"] {
+.iconContainer__2ea32 > svg[role="img"], .iconContainer__2ea32 > svg[role="img"] {
     color: #988E79;
 }
